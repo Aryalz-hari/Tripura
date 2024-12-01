@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #efedba;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "sidebar product-details"
+        "sidebar history";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #939490;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo {
+    background-color: #6d4242;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px; /* Increased font size */
+}
+
+.company-info h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size */
+}
+
+.company-info p {
+    margin: 0;
+    font-size: 18px; 
+}
+
+.company-details p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 18px; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.product-details {
+    grid-area: product-details;
+    text-align: center;
+    background-color: #a08383;
+    padding: 20px;
+    color: white;
+    font-size: 18px; 
+}
+
+.product-details h2 {
+    margin-top: 0;
+    font-size: 24px; 
+}
+
+
+.history {
+    grid-area: history;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    font-size: 18px; 
+}
+
+.purchase-history {
+    width: 48%;
+    padding: 20px;
+    background-color: #946969;
+}
+.sales-history {
+    width: 48%;
+    padding: 20px;
+    background-color: #7d5959;
+}
+

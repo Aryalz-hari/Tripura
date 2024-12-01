@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main-content";
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #5f6368;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    background-color: #8b3e3e;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.company-info h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+.profit-section, .chart-container, .sales-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+    text-align: center;
+}
+
+.sales-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sales-summary th, .sales-summary td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.sales-summary th {
+    background-color: #6c757d;
+    color: white;
+}
+
+.sales-summary tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
