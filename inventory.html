@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Inventory Dashboard</h2>
+        <a href="/products.html">Items</a>
+        <a href="#">Orders</a>
+        <a href="#">Reports</a>
+        <a href="#">Analysis</a>
+        <a href="/login.html">Settings</a>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1> Tripura Inventory Dashboard</h1>
+            <input type="date" value="2024-11-27">
+            <input type="text" placeholder="Search by product name...">
+        </div>
+
+        <div class="form-container">
+            <div class="form-box">
+                <h3>Add Product</h3>
+                <input type="text" placeholder="Name">
+                <button>Add Product</button>
+            </div>
+            <div class="form-box">
+                <h3>Add Purchase</h3>
+                <input type="text" placeholder="Product">
+                <input type="number" placeholder="Quantity">
+                <input type="number" placeholder="Price">
+                <input type="date">
+                <button>Add Purchase</button>
+            </div>
+            <div class="form-box">
+                <h3>Add Sale</h3>
+                <input type="text" placeholder="Product">
+                <input type="number" placeholder="Quantity">
+                <input type="number" placeholder="Price">
+                <input type="date">
+                <button>Add Sale</button>
+            </div>
+        </div>
+
+        <h2>Stock Availability</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Total Purchased</th>
+                <th>Total Sold</th>
+                <th>Remaining Stock</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button id="btn">View</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button id="btn">View</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
