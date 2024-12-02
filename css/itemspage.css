@@ -54,6 +54,13 @@ body {
     padding: 20px;
     font-size: 18px; 
 }
+.sidebar a {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+}
 
 .sidebar ul {
     list-style: none;

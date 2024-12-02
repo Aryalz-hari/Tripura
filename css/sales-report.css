@@ -43,6 +43,14 @@ body {
     color: white;
     padding: 20px;
 }
+.sidebar a {
+    text-decoration: none;
+    grid-area: sidebar;
+    background-color: #343a40;
+    color: white;
+
+}
+
 
 .sidebar ul {
     list-style: none;
